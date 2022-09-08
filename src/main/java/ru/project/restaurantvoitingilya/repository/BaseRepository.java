@@ -22,11 +22,4 @@ public interface BaseRepository<T> extends JpaRepository<T, Integer> {
     default void deleteExisted(int id) {
         checkModification(delete(id), id);
     }
-
-    @Query("SELECT e FROM #{#entityName} e WHERE e.id = :id")
-    T get(int id);
-
-    default T getExisted(int id) {
-        return checkExisted(get(id), id);
-    }
 }

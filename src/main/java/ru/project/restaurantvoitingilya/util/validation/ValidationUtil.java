@@ -29,6 +29,13 @@ public class ValidationUtil {
             throw new IllegalRequestDataException("Entity with id=" + id + " not found");
         }
     }
+
+    public static void checkModification(int count, int id, int restaurantId) {
+        if (count == 0) {
+            throw new IllegalRequestDataException("Entity with id=" + id + " not found or not belong Entity id=" + restaurantId);
+        }
+    }
+
     public static <T> T checkExisted(T obj, int id) {
         if (obj == null) {
             throw new IllegalRequestDataException("Entity with id=" + id + " not found");
