@@ -2,6 +2,7 @@ package ru.project.restaurantvotingilya.to;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import ru.project.restaurantvotingilya.util.validation.NoHtml;
 
 import javax.validation.constraints.NotBlank;
@@ -9,6 +10,7 @@ import javax.validation.constraints.Size;
 
 @Data
 @EqualsAndHashCode(callSuper = true)
+@NoArgsConstructor
 public class NamedTo extends BaseTo {
     @NotBlank
     @Size(min = 2, max = 128)
