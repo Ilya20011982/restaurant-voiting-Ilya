@@ -16,7 +16,6 @@ import java.sql.SQLException;
 @Configuration
 @Slf4j
 @EnableCaching
-// TODO: cache only most requested data!
 public class AppConfig {
 
     @Profile("!test")

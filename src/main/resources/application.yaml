@@ -31,8 +31,8 @@ spring:
 
   # https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html#common-application-properties-cache
   cache:
-    cache-names: users
-    caffeine.spec: maximumSize=5000,expireAfterAccess=60s
+    cache-names: users, restaurants, dishes
+    caffeine.spec: maximumSize=1,expireAfterAccess=60s
   h2:
     console:
       enabled: true
@@ -40,7 +40,7 @@ spring:
 logging:
   level:
     root: WARN
-    ru.ru.project.restaurantvoitingilya: DEBUG
+    ru.project.restaurantvoitingilya: DEBUG
     org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver: DEBUG
 
 server.servlet:
