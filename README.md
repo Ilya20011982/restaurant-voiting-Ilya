@@ -32,5 +32,5 @@ Java 17
 
 ## Swagger
 Для локального запуска доступен по ссылке http://localhost:8080.
-- User:  user\@yandex.ru / password
-- Admin: admin\@gmail.com / admin
+  - User:  user\\@yandex.ru / password
+  - Admin: admin\\@gmail.com / admin
